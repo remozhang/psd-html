@@ -1,0 +1,273 @@
+
+/*标语*/
+.index-banner{
+	background: #b3b3b3;
+	position: relative;
+}
+
+.index-banner-bg{
+	height: 570px;
+	overflow: hidden;
+}
+
+.index-banner-bg img{
+	margin: 0 auto;
+}
+
+.index-banner-text{
+	position: absolute;
+	top: 210px;
+	left: 50%;
+	margin-left: -388px;
+}
+
+ .index-banner-text .text-logo{
+	background: url("../images/index-banner-text-logo.png") no-repeat;
+	height: 117px;
+	width: 776px;
+}
+
+ .index-banner-text .text-info{
+	margin-top: 17px;
+	text-align: center;
+	color: #fff;
+}
+
+.index-banner-text .line{
+	display: inline-block;
+	border-top: 1px #fff solid;
+	width: 40px;
+	vertical-align: middle;
+}
+
+.index-banner-text span{
+	margin: 0 26px;
+}
+
+/*菜单*/
+.index-menu{
+	position: relative;
+    border-top: 4px solid #f34949;
+}
+
+.index-menu .menu-tips{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -78px;
+	width: 156px;
+	height: 72px;
+	line-height: 62px;
+    color: #fff;
+    background: #f34949;
+    text-align: center;
+}
+
+/*the menu下面的小三角*/
+.index-menu .menu-tips:after {
+	position: absolute;
+	content: '';
+	left: 0;
+	bottom: 0;
+	height: 0;
+	width: 0;
+	border-left: 78px solid transparent;
+	border-right: 78px solid transparent;
+	border-bottom: 10px solid #fff;
+}
+
+
+
+.index-menu .menu-list {
+	margin-top: 150px;
+	color: #555555;
+	/*为什么超出隐藏？*/
+	overflow: hidden;
+}
+
+.index-menu .menu-list ul {
+    overflow:hidden;
+    width: 1160px;
+
+}
+
+.index-menu .menu-item{
+	float: left;
+	width: 520px;
+	margin-right: 60px;
+	margin-bottom: 56px
+}
+
+.index-menu .menu-item .title,.index-menu .menu-item .line{
+	float: left;
+}
+
+.index-menu .menu-item .price{
+	float: right;
+	margin-right: 28px;
+}
+
+.index-menu .menu-item .title{
+	width: 230px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap; 
+}
+
+.index-menu .menu-item .line{
+	width: 192px;
+	border-top: 1px solid #e3e1e1;
+	margin-top: 10px;
+}
+
+.index-menu .menu-item .title h4 {
+	color: #555555;
+}
+
+.index-menu .menu-item .title .comment{
+	color: #bcbcbc;
+	font-size: 12px;
+	margin-top: 10px;
+}
+
+/*menu里面的按钮*/
+/*menu里面的按钮 为什么显示不出来按钮，因为a的reset是默认白色的 这里在div中加入a标签以至于设好了div标签，但在a中国又设置成了白色*/
+.index-menu .menu-more-btn{
+	margin:0 auto;
+	width: 116px;
+	height: 32px;
+	padding-left: 16px;
+	border:1px solid #d7d5d5;
+	font-size: 14px;
+	line-height: 32px;
+	color: #b7b7b7;
+}
+
+.index-menu .menu-more-btn .icon{
+	display: inline-block;
+	margin-left: 12px;
+	height: 7px;
+	width: 12px;
+	background: url("../images/index-menu-btn.png") no-repeat;
+}
+
+/*panel面板*/
+/*面板头*/
+.index-panel  .index-panel-header{
+	margin-top: 200px;
+}
+
+.index-panel  .index-panel-header h3{
+	font-weight: normal;
+	font-size: 20px;
+	margin-right: 20px;
+	float: left;
+}
+
+.index-panel  .index-panel-header .line{
+	float: left;
+	width: 200px;
+	border-top: 1px solid #e5e3e3;
+	margin-top: 10px;
+}
+
+.index-panel  .index-panel-header .btn-group{
+	float: right;
+	font-size: 0;
+}
+
+.index-panel  .index-panel-header .btn-group .btn{
+	display: inline-block;
+	margin-left: 11px;
+	height: 9px;
+	width: 9px;
+	border-radius: 50%;
+	background: #dedede;
+}
+
+.index-panel  .index-panel-header .btn-group .active{
+	background: #9b9b9b;
+}
+
+/*面板主体*/
+.index-panel .index-panel-body{
+	margin-top: 80px;
+}
+
+.index-panel .index-food-list{
+	overflow: hidden;
+}
+
+.index-panel .index-food-list ul{
+	width: 1160px;
+}
+
+.index-panel .food-item{
+	float: left;
+	width: 230px;
+	margin-right: 60px;
+}
+
+.index-panel .food-item .banner{
+	height: 202px;
+	margin-bottom: 28px;
+}	
+
+.index-panel .food-item .name{
+	color: #282828;
+	margin-bottom: 10px;
+}
+
+.index-panel .food-item .name span{
+	float: right;
+}
+
+.index-panel .food-item .starbar{
+	font-size: 0;
+}
+
+.index-panel .food-item .star{
+	display: inline-block;
+	margin-right: 5px;
+	height: 13px;
+	width: 12px;
+	background:url("../images/index-food.png") no-repeat;
+}
+
+.index-panel .food-item .nostar{
+	background-position: 0 -13px;
+}
+
+/*第二个面板*/
+.public-container.index-panel-body.index-pics{
+	height: 382px;
+	overflow: hidden;
+
+}
+.index-panel-body .food1{
+	float: left;
+	width: 353px;
+	height: 382px;
+	background: url("../images/demo3.png") no-repeat;
+}
+
+.index-panel-body .food2{
+	float: left;			
+	width: 287px;
+	height: 381px;
+	background: url("../images/demo4.png") no-repeat;
+}
+
+.index-panel-body .food3{
+	float: right;
+	width: 460px;
+	height: 381px;
+	background:url("../images/demo5.png") no-repeat;
+}
+
+
+
+
+
+
+
